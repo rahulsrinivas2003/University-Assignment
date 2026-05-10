@@ -10,7 +10,7 @@ from docx.shared import Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 # Load the template
-doc = Document('/mnt/user-data/uploads/Literature_Review.docx')
+doc = Document('Literature_Review.docx')
 
 # Helper function to clear and add content to a paragraph
 def replace_paragraph_content(paragraph, new_text, keep_formatting=True):
@@ -216,7 +216,7 @@ for ref in references:
         run.font.size = Pt(12)
 
 # Save the filled document
-doc.save('C:\\Users\\RAHUL\\Desktop\\University Assignment\\INFO6007 (Project Management in IT )\\INFO6007_Literature_Review_Rahul_Filled.docx')
+doc.save('INFO6007_Literature_Review_Rahul_Filled.docx')
 print("✅ Literature Review completed successfully!")
 print("📄 File saved: INFO6007_Literature_Review_Rahul_Filled.docx")
 print("\n📊 Word Counts:")
